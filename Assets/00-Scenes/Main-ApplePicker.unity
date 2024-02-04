@@ -317,10 +317,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 244002742034636013, guid: 4e839d6fd7f806f4f86d18e02bbd23fd, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1133134704142481266, guid: 4e839d6fd7f806f4f86d18e02bbd23fd, type: 3}
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1133134704142481266, guid: 4e839d6fd7f806f4f86d18e02bbd23fd, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 6542135281157125143, guid: 21943761b64c55d4c8761213f1078488, type: 3}
     - target: {fileID: 1133134704142481266, guid: 4e839d6fd7f806f4f86d18e02bbd23fd, type: 3}
       propertyPath: leftAndRightEdge
       value: 20
