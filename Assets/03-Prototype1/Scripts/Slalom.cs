@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Slalom : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject prefabPlayer;
+    public bool ready = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +17,13 @@ public class Slalom : MonoBehaviour
 
         
         if ( Input.GetMouseButtonUp(0) ) { 
+
+            // The mouse has been released
+
+            ready = false;
             EventManager.OnTimerStart();
 
-            player = Instantiate(prefabPlayer) as GameObject;
+
 
         }
 
