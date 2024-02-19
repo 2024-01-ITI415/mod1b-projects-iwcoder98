@@ -5,7 +5,6 @@ using UnityEngine;
 public class Slalom : MonoBehaviour
 {
     public bool ready = true;
-    public GameObject barrier;
     public GameObject player;
     private Vector3 offset;
 
@@ -25,8 +24,7 @@ public class Slalom : MonoBehaviour
 
             ready = false;
             EventManager.OnTimerStart();
-            Destroy(barrier);
-
+            player.GetComponent<Rigidbody>().isKinematic = false;
 
         }
 
