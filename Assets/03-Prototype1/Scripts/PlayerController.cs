@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using TMPro;
 
 
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent <Rigidbody>(); 
+        rb = GetComponent<Rigidbody>(); 
         count = 0; 
         SetCountText();
         winTextObject.SetActive(false);
