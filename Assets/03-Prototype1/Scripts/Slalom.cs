@@ -6,6 +6,7 @@ public class Slalom : MonoBehaviour
 {
     public bool ready = true;
     public GameObject player;
+    public Gaol gaol;
     private Vector3 offset;
 
     // Start is called before the first frame update
@@ -28,6 +29,10 @@ public class Slalom : MonoBehaviour
 
         }
 
+        if (gaol.goalMet)
+        {
+            
+        }
     }
 
     void LateUpdate()
