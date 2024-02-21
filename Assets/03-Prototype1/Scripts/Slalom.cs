@@ -8,6 +8,7 @@ public class Slalom : MonoBehaviour
     public GameObject player;
     public Gaol gaol;
     private Vector3 offset;
+    public GameObject finalPos;
 
     // Start is called before the first frame update
     void Start()
@@ -18,21 +19,19 @@ public class Slalom : MonoBehaviour
     // Update is called once per frame
     void Update() {
 
-        
-        if ( Input.GetMouseButtonUp(0) ) { 
-
-            // The mouse has been released
-
-            ready = false;
-            EventManager.OnTimerStart();
-            player.GetComponent<Rigidbody>().isKinematic = false;
-
-        }
-
-        if (gaol.goalMet)
+        if (ready)
         {
-            
+            if ( Input.GetMouseButtonUp(0) ) { 
+
+                // The mouse has been released
+
+                ready = false;
+                EventManager.OnTimerStart();
+                player.GetComponent<Rigidbody>().isKinematic = false;
+
+            }
         }
+        
     }
 
     void LateUpdate()
